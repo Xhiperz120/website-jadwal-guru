@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SMAN 1 PANGALENGAN</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --primary: #0f172a;     /* navy dark */
+      --secondary: #1e40af;   /* blue elegant */
+      --background: #f1f5f9;  /* soft light grey */
+      --card-bg: #ffffff;
+      --text-main: #1e293b;
+      --text-subtle: #64748b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--background);
+      color: var(--text-main);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .header {
+      width: 100%;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .header h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 6px;
+    }
+
+    .header h3 {
+      font-weight: 500;
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+    }
+
+    .content {
+      background: var(--card-bg);
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      max-width: 500px;
+      width: 90%;
+      margin-top: 80px;
+      text-align: center;
+    }
+
+    .content p {
+      font-size: 1.05rem;
+      margin-bottom: 30px;
+      color: var(--text-subtle);
+    }
+
+    .button {
+      background-color: var(--secondary);
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .button:hover {
+      background-color: #1e3a8a;
+    }
+
+    @media (max-width: 480px) {
+      .header h1 {
+        font-size: 2rem;
+      }
+
+      .content {
+        padding: 30px 20px;
+        margin-top: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    <div class="header">
+      <h1>SMAN 1 PANGALENGAN</h1>
+      <h3><strong>CERDAS</strong></h3>
+      <p><br></p>
+      <div class="subheading">
+        CAKAP • EDUKATIF • RESPONSIF • DINAMIS • AGAMIS • SUKSES
+      </div>
+    </div>
+  
+
+  <div class="content">
+    <p>Selamat datang di sistem informasi jadwal mengajar guru.<br>
+      Klik tombol di bawah untuk melihat.
+    </p>
+    <a href="guru.html" class="button"><strong>Lihat Jadwal Guru</strong></a>
+  </div>
+  
+</body>
+</html>
