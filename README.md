@@ -1,2 +1,0 @@
-# website-jadwal-guru
-web
